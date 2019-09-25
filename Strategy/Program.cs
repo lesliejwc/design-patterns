@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Strategy.Behavior;
+using Strategy.Model;
 
 namespace Strategy
 {
@@ -6,7 +7,17 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Apple apple = new Apple();
+            Orange orange = new Orange();
+            Lemon lemon = new Lemon();
+
+            // dynamically change fruit's behavior at runtime.
+            apple.Taste = new SweetTaste();
+            lemon.Taste = new SourTaste();
+
+            apple.Eat();
+            orange.Eat();
+            lemon.Eat();
         }
     }
 }
