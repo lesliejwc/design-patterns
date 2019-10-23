@@ -1,17 +1,23 @@
 # Strategy Pattern
 
-### Introduction
+### Definition
 
-The strategy pattern is a behavioral design pattern that allows an algorithm 
-(strategy) to be executed based on context, these algorithms are interchangable 
-at runtime. Useful when you have a set of objects with a common aspect with 
-variable behaviors depending on the context of the object.
+A behavioral software design pattern that enables selecting an algorithm at 
+runtime. Instead of implementing a single algorithm directly into code, code 
+receives run-time instructions as to which in a family of algorithms to use.
 
 
-### Implementation
+### Application
 
-The implementation illustrates the example of eating fruits. All fruits can 
-be eaten which is the common property among them, but different fruits have 
-different tastes, but also two fruits of the same type do not neccessarily 
-taste the same. An apple could be sweet or sour. The tastes are encapsulated 
-into the fruits, and act as delegates to execute these behaviors.
+Where you have an object/s (context objects) with a common purpose that 
+has variable behaviors (strategies) depending on the context of the object.
+
+
+### Notes
+
+- Adheres to open/closed principle
+    - strategies are coupled with an abstraction, and are not 
+    impacted by the increasing/decreasing number of strategies, or the changing 
+    logic within these strategies.
+    - uses composition instead of inheritance to decouple context objects from 
+    the strategies.

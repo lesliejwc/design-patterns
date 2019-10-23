@@ -7,17 +7,20 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            Apple apple = new Apple();
-            Orange orange = new Orange();
-            Lemon lemon = new Lemon();
+            Car carA = new Car("Car A");
+            Car carB = new Car("Car B");
+            Plane plane = new Plane("Plane");
+            ToyCar toy = new ToyCar("Toy car");
 
-            // dynamically change fruit's behavior at runtime.
-            apple.Taste = new SweetTaste();
-            lemon.Taste = new SourTaste();
+            // set behavior.
+            carA.Fuel = new UnleadedPetrol();
+            carB.Fuel = new Diesel();
+            plane.Fuel = new JetFuel();
 
-            apple.Eat();
-            orange.Eat();
-            lemon.Eat();
+            carA.Refuel();
+            carB.Refuel();
+            plane.Refuel();
+            toy.Refuel();
         }
     }
 }

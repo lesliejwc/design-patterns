@@ -11,9 +11,7 @@ in software design. It is a description or template for how to solve a problem
 that can be used in many different situations.
 
 
-### Types of Design Patterns
-
-There are three types of design patterns:
+### Patterns
 
 #### Creational
 
@@ -31,6 +29,9 @@ unecessary relationships within your design.
 Behavioural design patterns are those that are concerned with communication 
 between objects. They can make these communications more flexible and be more 
 adaptable to change.
+
+[Observer](https://github.com/lesliejwc/design-patterns/tree/master/Observer)
+[Strategy](https://github.com/lesliejwc/design-patterns/tree/master/Strategy)
 
 
 ### License
