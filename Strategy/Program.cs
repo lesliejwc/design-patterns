@@ -3,9 +3,9 @@ using Strategy.Model;
 
 namespace Strategy
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Car carA = new Car("Car A");
             Car carB = new Car("Car B");

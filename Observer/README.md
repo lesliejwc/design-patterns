@@ -32,7 +32,3 @@ references to the observers.
     - publishers, do not program the messages to be sent directly to specific 
     subscribers. Meaning publishers and subscribers do not know the existence 
     of one another.
-
-### Example
-
-...

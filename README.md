@@ -30,8 +30,8 @@ Behavioural design patterns are those that are concerned with communication
 between objects. They can make these communications more flexible and be more 
 adaptable to change.
 
-[Observer](https://github.com/lesliejwc/design-patterns/tree/master/Observer)
-[Strategy](https://github.com/lesliejwc/design-patterns/tree/master/Strategy)
+[Observer](https://github.com/lesliejwc/design-patterns/tree/master/Observer)  
+[Strategy](https://github.com/lesliejwc/design-patterns/tree/master/Strategy)  
 
 
 ### License
