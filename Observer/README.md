@@ -8,16 +8,24 @@ state, all its dependents are notified and updated automatically.
 
 ### Application
 
-You have an object called the subject, where whenever its state changes, you 
-can notify other objects who want to know about the state changes 
-(called observers), that the subject's state has changed. Observers may be 
-added or removed independently at runtime.
+You have an object called the subject/observable, where whenever its state 
+changes, you can notify other objects who want to know about the state changes 
+(called observers). Observers may be added or removed independently at runtime.
 
 
 ### Notes
 
 - one-to-many dependency between objects can be defined without being tightly 
 coupled.
+    - subject/observable updates observers through a common interface, allowing 
+    them to be loosely coupled.
+    - changing the number of observers to a subject does not require you to 
+    change any code in the subject.
+- observers do not necessarily receive updates in the same order as how they 
+were implemented.
+- Adheres to the design principle, favour composition over inheritance.
+    - The subject keeps track its observers through a list, which is actually 
+    composition set up in runtime.
 - large monolithic design does not scale well, the more observers within the 
 application, the less responsive it becomes.
     - implementing a one-to-many dependency between objects is an option if 
