@@ -1,5 +1,5 @@
-﻿using Strategy.Behavior;
-using Strategy.Model;
+﻿using Strategy.Behaviors;
+using Strategy.Models;
 
 namespace Strategy
 {

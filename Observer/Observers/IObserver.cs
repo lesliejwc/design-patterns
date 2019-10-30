@@ -1,4 +1,6 @@
-﻿namespace Observer
+﻿using Observer.Subjects;
+
+namespace Observer.Observers
 {
     /// <summary>
     /// The observer.

@@ -1,5 +1,8 @@
 ﻿using System;
 
+using Observer.Observers;
+using Observer.Subjects;
+
 namespace Observer
 {
     public class Program

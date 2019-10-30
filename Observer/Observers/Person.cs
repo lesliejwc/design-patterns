@@ -1,6 +1,8 @@
 ﻿using System;
 
-namespace Observer
+using Observer.Subjects;
+
+namespace Observer.Observers
 {
     /// <summary>
     /// A person.

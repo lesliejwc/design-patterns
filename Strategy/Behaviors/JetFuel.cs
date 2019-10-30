@@ -1,12 +1,12 @@
-namespace Strategy.Behavior
+namespace Strategy.Behaviors
 {
-    public class Diesel : IFuel
+    public class JetFuel : IFuel
     {
         public string Value
         {
             get
             {
-                return "diesel";
+                return "jet fuel";
             }
         }
     }

@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Observer
+using Observer.Observers;
+
+namespace Observer.Subjects
 {
     /// <summary>
     /// A type of security that signifies proportionate ownership in the issuing

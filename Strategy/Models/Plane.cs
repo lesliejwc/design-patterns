@@ -1,6 +1,6 @@
 using System;
 
-namespace Strategy.Model
+namespace Strategy.Models
 {
     public class Plane : Vehicle
     {
