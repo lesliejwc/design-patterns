@@ -34,6 +34,10 @@ adaptable to change.
 [Strategy](https://github.com/lesliejwc/design-patterns/tree/master/Strategy)  
 
 
+### Notes
+
+[Design Principles](https://github.com/lesliejwc/design-patterns/tree/master/Design-Principles.md)
+
 ### License
 
 This project is licensed under the terms of the MIT license.
