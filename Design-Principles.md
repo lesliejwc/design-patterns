@@ -1,6 +1,11 @@
 # Principles of Software Design
 
-## Don't repeat yourself
+Software Design principles promote good practices that allow software designs to
+be more scalable, maintainable and understandable.
+
+
+
+### Don't repeat yourself
 
 Don't write duplicate code, more code means more maintainence. Abstract common 
 functionality, but only if they are related to each other. Given two similar 
@@ -9,7 +14,8 @@ coupling these two tasks together. Given they are two different tasks for two
 different purposes, their commonalities may not remain the same in future.
 
 
-## Favor Composition over Inheritance
+
+### Favor Composition over Inheritance
 
 Code reuse is achieved through inheritance and composition, both with their own
 advantages and disadvantages. In regard to this principle, composition also 
@@ -22,7 +28,8 @@ While inheritance is more rigid; it breaks encapsulation, tightly coupled
 between the child and parent class, and is relatively harder to maintain.
 
 
-## Occam's Razor
+
+### Occam's Razor
 
 Also known as the law of parsimony, the name comes from Willian of Ockham, a 
 scholastic philosopher and theologian. The principle states that:
@@ -33,6 +40,7 @@ Think about the benefits of adding new details or functionality to your
 solutions, if there are no valid benefits for the purpose of solving the 
 problem, why would you increadse the complexity of your solution? Essentially, 
 the simplest solution is most likely to be the most correct solution. 
+
 
 
 ### Encapsulate what varies
@@ -47,7 +55,8 @@ to evolve independently of each other. Less code to be modified and tested,
 leads to more maintainable and adaptable software.
 
 
-## law of demeter
+
+### law of demeter
 
 Divide the areas of responsibilities to encourage low coupling between classes. 
 Formally, the law of demeter requires that a method m of an object O may only 
@@ -58,6 +67,7 @@ of m.
 Essentially what that all means is, "don't talk to strangers". Entities should 
 be independent and have limited knowledge about each other. Entities should only 
 speak to its immediate friends; classes that they have direct access to. 
+
 
 
 ### Programming for Interface not implementation
@@ -72,7 +82,8 @@ change, the implementation can undergo changes without affecting those that use
 it. Leading to a more correct, flexible and maintainable design.
 
 
-## Principle of least astonishment
+
+### Principle of least astonishment
 
 Unexpected behaviours add to the debugging effort. Software behaviour should be 
 intuitive and obvious. As a user whether it's the end user or another developer, 
@@ -81,7 +92,8 @@ models. This aims to leverage pre-existing knowledge of users to minimize the
 learning curve to use the software.
 
 
-## Avoid premature optimization
+
+### Avoid premature optimization
 
 > "Premature optimization is the root of all evil (or at least most of it) in 
 > programming"
@@ -100,13 +112,15 @@ more to the maintainence effort.
 
 
 
-# Principles of Object-oriented Software Design
+### SOLID principles
 
-"SOLID" is an acronym for 5 object-oriented software design principles aiming 
-to make software designs more understandable, flexible and easier to maintain.
+"SOLID" is an acronym for 5 software design principles targetted at 
+object-oriented programming, but the concepts themselves can still be applied to 
+other areas of software development.
 
 
-## Single Responsibility Principle
+
+#### Single Responsibility Principle
 
 > "A class should have one, and only one, reason to change."
 >
@@ -118,7 +132,8 @@ the flexibility and maintainability of the class, by reducing modifications
 required for new or changing requirements, as well as reduce testing needed.
 
 
-## Open-Closed Design
+
+#### Open-Closed Design
 
 > "Software entities (classes, modules, functions, etc.) should be open for 
 > extension, but closed for modification."
@@ -131,7 +146,8 @@ existing code makes the code easier to maintain. The ability to add new
 functionality allows the code to be more adaptable to change.
 
 
-## Liskov Substitution Principle (LSP)
+
+#### Liskov Substitution Principle (LSP)
 
 > "Let Φ(x) be a property provable about objects x of type T. Then Φ(y) should 
 > be true for objects y of type S where S is a subtype of T."
@@ -152,7 +168,8 @@ be achieved in a few ways:
   the software.
 
 
-## Interface Segregation Principle
+
+#### Interface Segregation Principle
 
 > "Clients should not be forced to depend upon interfaces that they do not use."
 >
@@ -165,7 +182,8 @@ the functionality and responsibility of the class, potentially results in misuse
 by other developers, as well as possibly produce unexpected behaviours.
 
 
-## Dependency Inversion principle
+
+#### Dependency Inversion principle
 
 > "High level modules should not depend on low level module. Both should depend 
 > on abstractions. Abstractions should not depend on details.  Details should 
@@ -178,9 +196,12 @@ Allowing minimal interference to the integrity of the modules and components,
 which lead to a more adaptable and maintainable design.
 
 
-# Definitions
 
-### Abstraction
+&nbsp;
+
+## Definitions
+
+#### Abstraction
 
 > "An abstraction denotes the essential characteristics of an object that 
 > distinguish it from all other kinds of objects and thus provide crisply 
@@ -189,7 +210,8 @@ which lead to a more adaptable and maintainable design.
 > \- Grady Booch
 
 
-### Encapsulation
+
+#### Encapsulation
 
 > "Encapsulation is the process of compartmentalizing the elements of an 
 > abstraction that constitute its structure and its behavior; encapsulation 
@@ -199,7 +221,8 @@ which lead to a more adaptable and maintainable design.
 > \- Grady Booch
 
 
-### Modularity
+
+#### Modularity
 
 > "Modularity is the property of a system that has been decomposed into a set of
 > cohesive and loosely coupled modules."
@@ -207,7 +230,8 @@ which lead to a more adaptable and maintainable design.
 > \- Grady Booch
 
 
-### Hierarchy
+
+#### Hierarchy
 
 > "Hierarchy is a ranking or ordering of abstractions"
 >
