@@ -24,13 +24,15 @@ Structural design patterns are about composition, it helps the realization of
 relationships between the entities, what are the neccessary and what are the 
 unecessary relationships within your design.
 
+[Decorator](https://github.com/lesliejwc.design-patterns/tree/master/Decorator)
+
 #### Behavioural
 
 Behavioural design patterns are those that are concerned with communication 
 between objects. They can make these communications more flexible and be more 
 adaptable to change.
 
-[Observer](https://github.com/lesliejwc/design-patterns/tree/master/Observer)  
+[Observer](https://github.com/lesliejwc/design-patterns/tree/master/Observer)   
 [Strategy](https://github.com/lesliejwc/design-patterns/tree/master/Strategy)  
 
 
