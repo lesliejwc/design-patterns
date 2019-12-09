@@ -20,7 +20,7 @@ related to object creation and prevent unnecessary complexity to the design.
 
 #### Structural
 
-Structural design patterns are about composition, it helps the realization of  
+Structural design patterns are about composition, it helps the realization of 
 relationships between the entities, what are the neccessary and what are the 
 unecessary relationships within your design.
 

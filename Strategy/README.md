@@ -9,9 +9,9 @@ that use it.
 
 ### Application
 
-Where you have many any related classes known as the context that has one of 
-many different behaviours known as strategies, you can configure a class to one 
-of these many behaviours to suit the context of the situation.
+Where you have many related classes (context) that have one of many behaviours 
+(strategies), you can configure a class to one of these many behaviours to suit 
+the context of the situation.
 
 
 ### Notes

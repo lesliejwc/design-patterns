@@ -8,9 +8,9 @@ a flexible alternative to sub-classing for extending functionality.
 
 ### Application
 
-Where you want to add or remove respsonsibilities to individual objects rather 
-than the entire class. This is done dynamically and transparently, such that 
-it doesn't affect other objects.
+Where you want to add or remove respsonsibilities (decorators) to individual 
+objects (components) rather than the entire class. This is done dynamically and 
+transparently, such that it doesn't affect other objects.
 
 
 ### Notes

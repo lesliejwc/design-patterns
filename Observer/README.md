@@ -8,9 +8,9 @@ state, all its dependents are notified and updated automatically.
 
 ### Application
 
-Where you have an object/s known as observers that are dependent on another 
-object known as the subject, such that observers require changes to be made 
-when the subject changes. 
+Where you have an object/s (observers) that are dependent on another object 
+(subject), such that observers require changes to be made when the subject 
+changes. 
 
 
 ### Notes
