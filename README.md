@@ -24,7 +24,7 @@ Structural design patterns are about composition, it helps the realization of
 relationships between the entities, what are the neccessary and what are the 
 unecessary relationships within your design.
 
-[Decorator](https://github.com/lesliejwc.design-patterns/tree/master/Decorator)
+[Decorator](https://github.com/lesliejwc/design-patterns/tree/master/Decorator)
 
 #### Behavioural
 
