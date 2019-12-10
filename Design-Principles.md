@@ -56,7 +56,7 @@ leads to more maintainable and adaptable software.
 
 
 
-### law of demeter
+### Law of Demeter
 
 Divide the areas of responsibilities to encourage low coupling between classes. 
 Formally, the law of demeter requires that a method m of an object O may only 
