@@ -9,7 +9,8 @@ namespace Decorator
     {
         public static void Main(string[] args)
         {
-            Beverage latte = new Latte();
+            // latte.
+            IBeverage latte = new Latte();
             latte = new Milk(latte);
             latte = new SoyMilk(latte);
 
@@ -18,7 +19,8 @@ namespace Decorator
                               latte.GetDescription(),
                               latte.GetCost());
 
-            Beverage cappuccino = new Cappuccino();
+            // cappuccino.
+            IBeverage cappuccino = new Cappuccino();
             cappuccino = new Chocolate(cappuccino);
             cappuccino = new VanillaExtract(cappuccino);
             cappuccino = new Chocolate(cappuccino);
@@ -27,7 +29,6 @@ namespace Decorator
                               cappuccino.GetName(),
                               cappuccino.GetDescription(),
                               cappuccino.GetCost());
-
         }
     }
 }

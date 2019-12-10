@@ -5,7 +5,7 @@ namespace Decorator.Components
     /// <summary>
     /// The Cappuccino, a type of beverage.
     /// </summary>
-    public class Cappuccino : Beverage
+    public class Cappuccino : IBeverage
     {
         // The beverage's name.
         private string _name;
@@ -30,7 +30,7 @@ namespace Decorator.Components
         /// Gets the name of the beverage.
         /// </summary>
         /// <returns>The name.</returns>
-        public override string GetName()
+        public string GetName()
         {
             return _name;
         }
@@ -39,7 +39,7 @@ namespace Decorator.Components
         /// Gets the description of the beverage.
         /// </summary>
         /// <returns>The description.</returns>
-        public override string GetDescription()
+        public string GetDescription()
         {
             return _description;
         }
@@ -48,7 +48,7 @@ namespace Decorator.Components
         /// Gets the cost of the beverage.
         /// </summary>
         /// <returns>The cost.</returns>
-        public override double GetCost()
+        public double GetCost()
         {
             return _cost;
         }

@@ -3,24 +3,24 @@
     /// <summary>
     /// The beverage.
     /// </summary>
-    public abstract class Beverage
+    public interface IBeverage
     {
         /// <summary>
         /// Gets the name of the beverage.
         /// </summary>
         /// <returns>The name.</returns>
-        public abstract string GetName();
+        string GetName();
 
         /// <summary>
         /// Gets the description of the beverage.
         /// </summary>
         /// <returns>The description.</returns>
-        public abstract string GetDescription();
+        string GetDescription();
 
         /// <summary>
         /// Gets the cost of the beverage.
         /// </summary>
         /// <returns>The cost.</returns>
-        public abstract double GetCost();
+        double GetCost();
     }
 }

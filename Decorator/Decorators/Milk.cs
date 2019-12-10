@@ -17,7 +17,7 @@ namespace Decorator.Decorators
         /// Initializes an instance of the <see cref="Milk"/> class.
         /// </summary>
         /// <param name="beverage">The beverage.</param>
-        public Milk(Beverage beverage)
+        public Milk(IBeverage beverage)
             : base(beverage)
         {
             _description = ", milk";
@@ -30,7 +30,7 @@ namespace Decorator.Decorators
         /// <returns>The name.</returns>
         public override string GetName()
         {
-            return _beverage.GetName();
+            return base.GetName();
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Decorator.Decorators
         /// <returns>The description.</returns>
         public override string GetDescription()
         {
-            return _beverage.GetDescription() + _description;
+            return base.GetDescription() + _description;
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Decorator.Decorators
         /// <returns>The cost.</returns>
         public override double GetCost()
         {
-            return _beverage.GetCost() + _cost;
+            return base.GetCost() + _cost;
         }
     }
 }
