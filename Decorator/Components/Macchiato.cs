@@ -3,7 +3,7 @@
     /// <summary>
     /// The Macchiato, a type of beverage.
     /// </summary>
-    public class Macchiato : Beverage
+    public class Macchiato : IBeverage
     {
         // The beverage's name.
         private string _name;
@@ -28,7 +28,7 @@
         /// Gets the name of the beverage.
         /// </summary>
         /// <returns>The name.</returns>
-        public override string GetName()
+        public string GetName()
         {
             return _name;
         }
@@ -37,7 +37,7 @@
         /// Gets the description of the beverage.
         /// </summary>
         /// <returns>The description.</returns>
-        public override string GetDescription()
+        public string GetDescription()
         {
             return _description;
         }
@@ -46,7 +46,7 @@
         /// Gets the cost of the beverage.
         /// </summary>
         /// <returns>The cost.</returns>
-        public override double GetCost()
+        public double GetCost()
         {
             return _cost;
         }
