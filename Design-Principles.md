@@ -70,7 +70,7 @@ speak to its immediate friends; classes that they have direct access to.
 
 
 
-### Programming for Interface not implementation
+### Programming for Interface not Implementation
 
 Focus more on what the code does, rather than how it's done. The interface 
 limits your knowledge, and provides you with how its supposed to be used. While 
@@ -83,7 +83,7 @@ it. Leading to a more correct, flexible and maintainable design.
 
 
 
-### Principle of least astonishment
+### Principle of Least Astonishment
 
 Unexpected behaviours add to the debugging effort. Software behaviour should be 
 intuitive and obvious. As a user whether it's the end user or another developer, 
@@ -112,7 +112,7 @@ more to the maintainence effort.
 
 
 
-### SOLID principles
+### SOLID Principles
 
 "SOLID" is an acronym for 5 software design principles targetted at 
 object-oriented programming, but the concepts themselves can still be applied to 
@@ -147,7 +147,7 @@ functionality allows the code to be more adaptable to change.
 
 
 
-#### Liskov Substitution Principle (LSP)
+#### Liskov Substitution Principle
 
 > "Let Φ(x) be a property provable about objects x of type T. Then Φ(y) should 
 > be true for objects y of type S where S is a subtype of T."
@@ -183,7 +183,7 @@ by other developers, as well as possibly produce unexpected behaviours.
 
 
 
-#### Dependency Inversion principle
+#### Dependency Inversion Principle
 
 > "High level modules should not depend on low level module. Both should depend 
 > on abstractions. Abstractions should not depend on details.  Details should 
