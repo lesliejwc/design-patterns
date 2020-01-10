@@ -1,9 +1,50 @@
-# Principles of Software Design
+# Introduction
 
-Software Design principles promote good practices that allow software designs to
-be more scalable, maintainable and understandable.
+Software design principles are a set of guidelines to help promote better 
+software design. Based on fundamental concepts, a greater understanding to these 
+concepts will allow you to see how and why application of these principles will 
+lead your designs to be more maintainable, understandable and flexible.
 
 
+
+# Fundamental Software Design Concepts
+
+The object model, on which object-oriented design was based upon, is composed of
+principles of abstraction, encapsulation, modularity, hierarchy, typing, 
+concurrency, and persistence. The key concepts to focus on are abstraction, 
+encapsulation, modularity and hierarchy.
+
+These are the definitions as defined by Grady Booch.
+
+
+## Abstraction
+
+An abstraction denotes the essential characteristics of an object that 
+distinguish it from all other kinds of objects and thus provide crisply 
+defined conceptual boundaries, relative to the perspective of the viewer.
+
+
+## Encapsulation
+
+Encapsulation is the process of compartmentalizing the elements of an 
+abstraction that constitute its structure and its behavior; encapsulation 
+serves to separate the contractual interface of an abstraction and its 
+implementation.
+
+
+## Modularity
+
+Modularity is the property of a system that has been decomposed into a set of
+cohesive and loosely coupled modules.
+
+
+## Hierarchy
+
+Hierarchy is a ranking or ordering of abstractions.
+
+
+
+# Software Design Principles
 
 ### Don't repeat yourself
 
@@ -12,21 +53,6 @@ functionality, but only if they are related to each other. Given two similar
 tasks with different purposes, using common code for them results in tightly 
 coupling these two tasks together. Given they are two different tasks for two 
 different purposes, their commonalities may not remain the same in future.
-
-
-
-### Favor Composition over Inheritance
-
-Code reuse is achieved through inheritance and composition, both with their own
-advantages and disadvantages. In regard to this principle, composition also 
-refers to association and aggregation.
-
-Composition offers more flexibility, the behavior of the class can adapt 
-dynamically to different situations, by changing the implementation of the 
-associated class during run-time. Allowing it to be more tolerant to change.
-While inheritance is more rigid; it breaks encapsulation, tightly coupled 
-between the child and parent class, and is relatively harder to maintain.
-
 
 
 ### Occam's Razor
@@ -42,55 +68,19 @@ problem, why would you increadse the complexity of your solution? Essentially,
 the simplest solution is most likely to be the most correct solution. 
 
 
+### Keep It Simple, Stupid
 
-### Encapsulate what varies
-
-Isolate the code you expect to change, from what doesn't. This is achieved 
-through encapsulation. Setting apart the related concerns from unrelated 
-concerns, allows you to focus on the module's objective.
-
-Implementations can be changed without affecting other unrelated parts of the 
-software, giving you a more modular design where parts of the software are able 
-to evolve independently of each other. Less code to be modified and tested, 
-leads to more maintainable and adaptable software.
+The simplier a system is, the easier it is to maintain. An increase in 
+complexity, also means an increase in debugging effort required to maintain and 
+improve the software.
 
 
+### You Aren't Gonna Need It
 
-### Law of Demeter
-
-Divide the areas of responsibilities to encourage low coupling between classes. 
-Formally, the law of demeter requires that a method m of an object O may only 
-invoke the methods of O itself, m's parameters, any objects created within m, 
-O's direct component objects, and global variables accessible by O in the scope 
-of m.
-
-Essentially what that all means is, "don't talk to strangers". Entities should 
-be independent and have limited knowledge about each other. Entities should only 
-speak to its immediate friends; classes that they have direct access to. 
-
-
-
-### Programming for Interface not Implementation
-
-Focus more on what the code does, rather than how it's done. The interface 
-limits your knowledge, and provides you with how its supposed to be used. While 
-with the implementation, the underlying knowledge on how it works is exposed,  
-there are no safeguards from misuse, which likely leads to unexpected behaviours. 
-
-The interface describes how to use it, and as long as how it's used doesn't 
-change, the implementation can undergo changes without affecting those that use 
-it. Leading to a more correct, flexible and maintainable design.
-
-
-
-### Principle of Least Astonishment
-
-Unexpected behaviours add to the debugging effort. Software behaviour should be 
-intuitive and obvious. As a user whether it's the end user or another developer, 
-the design should match the user's experience, expectectations and mental 
-models. This aims to leverage pre-existing knowledge of users to minimize the 
-learning curve to use the software.
-
+Don't build things for the sake of future-proofing. The extra effort spent 
+implementing and debugging these, could be spent more productively elsewhere.
+Requirements change, your understanding of the problem changes, and these could  
+result in your extra efforts becoming obselete.
 
 
 ### Avoid premature optimization
@@ -111,13 +101,71 @@ Re-optimization of the new corrected solution is likely required, adding even
 more to the maintainence effort.
 
 
+### Encapsulate what varies
+
+Isolate the code you expect to change, from what doesn't. This is achieved 
+through encapsulation. Setting apart the related concerns from unrelated 
+concerns, allows you to focus on the module's objective.
+
+Implementations can be changed without affecting other unrelated parts of the 
+software, giving you a more modular design where parts of the software are able 
+to evolve independently of each other. Less code to be modified and tested, 
+leads to more maintainable and adaptable software.
+
+
+### Programming for Interface not Implementation
+
+Focus more on what the code does, rather than how it's done. The interface 
+limits your knowledge, and provides you with how its supposed to be used. While 
+with the implementation, the underlying knowledge on how it works is exposed,  
+there are no safeguards from misuse, which likely leads to unexpected behaviours. 
+
+Interface is not limited to literal interfaces, but the same concept applies to 
+an abstraction. It describes how to use the underlying class, and as long as how 
+it's used doesn't change, the implementation can undergo changes without 
+affecting those that use it. Leading to a more correct, flexible and 
+maintainable design.
+
+
+### Favor Composition over Inheritance
+
+Code reuse is achieved through inheritance and composition, both with their own
+advantages and disadvantages. In regard to this principle, composition also 
+refers to association and aggregation.
+
+Composition offers more flexibility, the behavior of the class can adapt 
+dynamically to different situations, by changing the implementation of the 
+associated class during run-time. Allowing it to be more tolerant to change.
+While inheritance is more rigid; it breaks encapsulation, tightly coupled 
+between the child and parent class, and is relatively harder to maintain.
+
+
+### Law of Demeter
+
+Divide the areas of responsibilities to encourage low coupling between classes. 
+Formally, the law of demeter requires that a method m of an object O may only 
+invoke the methods of O itself, m's parameters, any objects created within m, 
+O's direct component objects, and global variables accessible by O in the scope 
+of m.
+
+Essentially what that all means is, don't talk to strangers. Entities should be 
+independent and have limited knowledge about each other. Entities should only 
+speak to its immediate friends; classes that they have direct access to. 
+
+
+### Principle of Least Astonishment
+
+Unexpected behaviours add to the debugging effort. Software behaviour should be 
+intuitive and obvious. As a user whether it's the end user or another developer, 
+the design should match the user's experience, expectectations and mental 
+models. This aims to leverage pre-existing knowledge of users to minimize the 
+learning curve to use the software.
+
 
 ### SOLID Principles
 
-"SOLID" is an acronym for 5 software design principles targetted at 
-object-oriented programming, but the concepts themselves can still be applied to 
-other areas of software development.
-
+"SOLID" is an acronym for 5 software design principles specific to 
+object-oriented programming.
 
 
 #### Single Responsibility Principle
@@ -154,10 +202,9 @@ functionality allows the code to be more adaptable to change.
 >
 > \- Barbara Liskov
 
-The principle describes, objects of a parent class should be replacable with 
-objects of its child class without disrupting the integrity of the software. 
-This requires the child class to behave the same as the parent class, this can 
-be achieved in a few ways:
+The objects of a parent class should be replacable with objects of its child 
+class without disrupting the integrity of the software. This requires the child 
+class to behave the same as the parent class, as well as the following:
 
 - Methods in the child class can implement less restrictive rules, but not 
   enforce stricter rules. Otherwise it could lead to unexpected behaviour in the 
@@ -178,8 +225,8 @@ be achieved in a few ways:
 Interfaces describe the functionality, and from that you can infer the 
 purpose and responsibility of the class. Using unsuitable interfaces for a given 
 implementation forces it to implement unecessary methods. This adds confusion to 
-the functionality and responsibility of the class, potentially results in misuse 
-by other developers, as well as possibly produce unexpected behaviours.
+the functionality and responsibility of the class, can lead to potential misuse 
+and unexpected behaviours.
 
 
 
@@ -195,44 +242,3 @@ decouple the high-level modules and low-level components from each other.
 Allowing minimal interference to the integrity of the modules and components,
 which lead to a more adaptable and maintainable design.
 
-
-
-&nbsp;
-
-## Definitions
-
-#### Abstraction
-
-> "An abstraction denotes the essential characteristics of an object that 
-> distinguish it from all other kinds of objects and thus provide crisply 
-> defined conceptual boundaries, relative to the perspective of the viewer"
->
-> \- Grady Booch
-
-
-
-#### Encapsulation
-
-> "Encapsulation is the process of compartmentalizing the elements of an 
-> abstraction that constitute its structure and its behavior; encapsulation 
-> serves to separate the contractual interface of an abstraction and its 
-> implementation."
->
-> \- Grady Booch
-
-
-
-#### Modularity
-
-> "Modularity is the property of a system that has been decomposed into a set of
-> cohesive and loosely coupled modules."
->
-> \- Grady Booch
-
-
-
-#### Hierarchy
-
-> "Hierarchy is a ranking or ordering of abstractions"
->
-> \- Grady Booch

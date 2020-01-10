@@ -9,14 +9,12 @@ that use it.
 
 ### Application
 
-Where you have many related classes (context) that have one of many behaviours 
-(strategies), you can configure a class to one of these many behaviours to suit 
-the context of the situation.
+Where you have related classes, known as the context, that have one of many 
+behaviours known as strategies, you can configure a class to one of these many 
+behaviours to suit the context of the situation.
 
 
 ### Notes
-
-- Strategies are interchangable dynamically at run-time.
 
 - Adheres to open/closed principle
     - Strategies are coupled with an abstraction, and are not impacted by the 
@@ -25,3 +23,5 @@ the context of the situation.
 
 - Uses composition instead of inheritance to decouple context objects from the 
   strategies.
+  
+- Strategies are interchangable dynamically at run-time.

@@ -3,14 +3,15 @@
 ### Definition
 
 Attach additional responsibilities to an object dynamically. Decorators provide 
-a flexible alternative to sub-classing for extending functionality.
+a flexible alternative to subclassing for extending functionality.
 
 
 ### Application
 
-Where you want to add or remove respsonsibilities (decorators) to individual 
-objects (components) rather than the entire class. This is done dynamically and 
-transparently, such that it doesn't affect other objects.
+Where you want to add or remove respsonsibilities, known as the decorators, to 
+individual objects known as the components, rather than the entire class. This 
+is done dynamically and transparently, such that it doesn't affect other 
+objects.
 
 
 ### Notes
