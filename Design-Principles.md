@@ -161,6 +161,34 @@ the design should match the user's experience, expectectations and mental
 models. This aims to leverage pre-existing knowledge of users to minimize the 
 learning curve to use the software.
 
+---
+
+### The principle of Least Effort
+This principle (also called Zipf’s Law) stems from a basic human behaviour: Everyone tends to follow the path that is as close to effortless as possible. So for example if our design follows a particular pattern, the next developer will follow the same pattern again and again unless there is a significantly easier way to perform the task, in which case they will change! Or, taking this further, once they find acceptable results for a task, there is no immediate need to improve the current solution.
+Least effort is a variant of least work
+As such it is imperative to aim for a strong start by putting the right architecture in place: it sets high expectations and ensures everyone understands that the quality is not compromised in the project’s lifecycle and it will be adhered to in case of future changes.
+For me, the greatness of this principle lies in the fact that its benefits extrapolate: once we put a right design in place, we can create an architectural framework which will be the basis of the next systems we build. In other words, we are able to establish a successful and future-proof template for the organisation’s software systems.
+
+### The principle of Opportunity Cost
+Every time we make a choice, there is a certain value we place on that choice. Value has two parts: benefits and costs. The opportunity cost of a choice is what we give up to get it. To make a good economic decision, we want to choose the option with the greatest benefit to us but the lowest cost.
+For example, if we have two choices, either an in-house built system or an off-the-shelf vendor product and we choose the latter, then our opportunity cost is the shiny new system our development team could have developed but didn’t.
+This is what architecture is all about: weighing choices against each other and trying to make an informed decision on which one will add the most value for the project. For instance, a very common dichotomy is whether to create a tactical solution with quick time to market or a more strategic one which will be more expensive now with the view to leverage it in future projects and hence minimise the cost later down the line.
+Here are some points to consider:
+What is the time available for the architectural analysis/evaluation? It is challenging enough to come up with one solution, let alone a few!
+What is the product pipeline for the next 1–3 years? And what other projects are lined up? Can you see any synergies?
+What is your current technical debt that you could potentially address?
+And turning this around: How much new technical debt will incur if you pursue a tactical solution?
+Which quality attributes tend to be the most important for systems in your organisation and how will they be compromised by the proposed solution?
+Apart from the architecture team who else is a stakeholder that will affect the decision? The Business? Your boss? The Technical Design Authority? What are the key objectives of each stakeholder? How will you mitigate conflicting needs?
+
+### The principle of Last Responsible Moment
+This principle (aka Cost of Delay) originates from Lean Software Development and emphasises holding on taking important actions and crucial decisions for as long as possible. This is done so as to not eliminate important alternatives until the last possible moment i.e. wait to narrow the options down until you are better informed.
+A strategy of not making a premature decision but instead delaying commitment and keeping important and irreversible decisions open until the cost of not making a decision becomes greater than the cost of making a decision.
+One way to mitigate the risk of deciding too late is to build Proof of Concepts (POCs) to prototype the alternative options and demonstrate to the stakeholders what they are asking for.
+
+---
+
+
 
 ### SOLID Principles
 
