@@ -1,10 +1,10 @@
 using System;
 
-namespace Strategy.Models
+namespace Strategy.Context
 {
-    public class Plane : Vehicle
+    public class Car : Vehicle
     {
-        public Plane(string name)
+        public Car(string name)
         {
             Name = name;
         }

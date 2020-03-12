@@ -1,4 +1,4 @@
-namespace Strategy.Behaviors
+namespace Strategy.Strategies
 {
     public class UnleadedPetrol : IFuel
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Strategy.Models
+namespace Strategy.Context
 {
     public class ToyCar : Vehicle
     {

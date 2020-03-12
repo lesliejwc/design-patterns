@@ -1,6 +1,6 @@
-using Strategy.Behaviors;
+using Strategy.Strategies;
 
-namespace Strategy.Models
+namespace Strategy.Context
 {
     public abstract class Vehicle
     {
