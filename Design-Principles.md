@@ -11,36 +11,23 @@ lead your designs to be more maintainable, understandable and flexible.
 
 The object model, on which object-oriented design was based upon, is composed of
 principles of abstraction, encapsulation, modularity, hierarchy, typing, 
-concurrency, and persistence. The key concepts to focus on are abstraction, 
-encapsulation, modularity and hierarchy.
+concurrency, and persistence. 
 
-These are the definitions as defined by Grady Booch.
+The key concepts to focus on are abstraction, encapsulation, modularity and hierarchy. These are the definitions as defined by Grady Booch:
 
-
-## Abstraction
-
-An abstraction denotes the essential characteristics of an object that 
+An **abstraction** denotes the essential characteristics of an object that 
 distinguish it from all other kinds of objects and thus provide crisply 
 defined conceptual boundaries, relative to the perspective of the viewer.
 
-
-## Encapsulation
-
-Encapsulation is the process of compartmentalizing the elements of an 
+**Encapsulation** is the process of compartmentalizing the elements of an 
 abstraction that constitute its structure and its behavior; encapsulation 
 serves to separate the contractual interface of an abstraction and its 
 implementation.
 
-
-## Modularity
-
-Modularity is the property of a system that has been decomposed into a set of
+**Modularity** is the property of a system that has been decomposed into a set of
 cohesive and loosely coupled modules.
 
-
-## Hierarchy
-
-Hierarchy is a ranking or ordering of abstractions.
+**Hierarchy** is a ranking or ordering of abstractions.
 
 
 
