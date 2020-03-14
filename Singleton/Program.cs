@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Singleton
 {
@@ -6,17 +7,34 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-            Singleton inst1 = Singleton.GetInstance();
-            Singleton inst2 = Singleton.GetInstance();
+            Console.WriteLine("Singleton tests:");
 
-            if (inst1 == inst2)
+            // thread 1
+            Task.Run(() =>
             {
-                Console.WriteLine("Same instance");
-            }
-            else
+                EagerInitSingleton es1 = EagerInitSingleton.GetInstance();
+                Console.WriteLine("Thread 1 - Eager initialized singleton: " + es1.GetHashCode());
+
+                LazyInitSingleton ls1 = LazyInitSingleton.GetInstance();
+                Console.WriteLine("Thread 1 - Lazy initialized singleton: " + ls1.GetHashCode());
+
+                DoubleCheckLockSingleton ds1 = DoubleCheckLockSingleton.GetInstance();
+                Console.WriteLine("Thread 1 - Double-check lock singleton: " + ds1.GetHashCode());
+            });
+
+            // thread 2
+            Task.Run(() =>
             {
-                Console.WriteLine("Not the same");
-            }
+                EagerInitSingleton es2 = EagerInitSingleton.GetInstance();
+                Console.WriteLine("Thread 2 - Eager initialized singleton: " + es2.GetHashCode());
+
+                // may yield different instance, but not neccessarily.
+                LazyInitSingleton ls2 = LazyInitSingleton.GetInstance();
+                Console.WriteLine("Thread 2 - Lazy initialized singleton: " + ls2.GetHashCode());
+
+                DoubleCheckLockSingleton ds2 = DoubleCheckLockSingleton.GetInstance();
+                Console.WriteLine("Thread 2 - Double-check lock singleton: " + ds2.GetHashCode());
+            }); 
         }
     }
 }
