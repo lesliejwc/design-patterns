@@ -1,26 +1,22 @@
+using System;
+
 using Factory.Models;
 
 namespace Factory.Factories
 {
     /// <summary>
-    /// Honda factory class.
+    /// The Honda factory.
     /// </summary>
-    public class HondaFactory : Factory
+    public class HondaFactory : FactoryBase
     {
-        /// <summary>
-        /// Initializes an instance of the <see cref="HondaFactory" /> class.
-        /// </summary>
-        public HondaFactory()
-            : base()
-        {
-        }
-
         /// <summary>
         /// Manufacture the vehicle.
         /// </summary>
+        /// <param name="type">The class of vehicle.</param>
+        /// <returns>The vehicle.</returns>
         public override IVehicle Manufacture(string type)
         {
-            IVehicle result = null;
+            IVehicle result;
 
             switch (type)
             {
@@ -37,7 +33,7 @@ namespace Factory.Factories
                     break;
 
                 default:
-                    break;
+                    throw new ArgumentException("No such class of vehicle");
             }
 
             return result;

@@ -1,12 +1,12 @@
 namespace Factory.Models
 {
     /// <summary>
-    /// The motorcycle manufactured by Mazda class.
+    /// The motorcycle manufactured by Mazda.
     /// </summary>
     public class MazdaMotorcycle : IVehicle
     {
         /// <summary>
-        /// The name/model of the vehicle.
+        /// The name of the vehicle.
         /// </summary>
         public string Name { get; private set; }
 

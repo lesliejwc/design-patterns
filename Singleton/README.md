@@ -14,10 +14,10 @@ accessible from a well known access point.
 
 ### Notes
 
+- lazy initialization is not thread safe
+- can have performance issues in high traffic use cases when singleton is 
+  locked to make it thread safe
 - variations:
     - eager initialization
     - lazy initialization
     - double-check lock
-- lazy initialization is not thread safe
-- can have performance issues in high traffic use cases when singleton is 
-  locked to make it thread safe
