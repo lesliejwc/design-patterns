@@ -5,6 +5,11 @@ software design. Based on fundamental concepts, a greater understanding to these
 concepts will allow you to see how and why application of these principles will 
 lead your designs to be more maintainable, understandable and flexible.
 
+Design principles are not absolute, neither are design patterns, although 
+patterns are based around fulfilling and complying to design principles, there 
+are cases where it complies to some and contradicts others. In cases like these, 
+you need to leverage the benefits against the detriments, remember these are 
+guidelines.
 
 
 # Fundamental Software Design Concepts
