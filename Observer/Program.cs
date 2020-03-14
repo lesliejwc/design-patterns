@@ -9,12 +9,12 @@ namespace Observer
     {
         public static void Main(string[] args)
         {
-            // the subject.
-            Stock companyStock = new Stock();
-
             // the observers.
             Person personA = new Person("Warren");
             Person personB = new Person("Thomas");
+
+            // the subject.
+            Stock companyStock = new Stock();
 
             // watch the stock prices.
             companyStock.Register(personA);

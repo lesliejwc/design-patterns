@@ -1,26 +1,22 @@
-using Factory.Models;
+using System;
+
+using Factory.Products;
 
 namespace Factory.Factories
 {
     /// <summary>
-    /// Mazda factory class.
+    /// The Mazda factory.
     /// </summary>
-    public class MazdaFactory : Factory
+    public class MazdaFactory : FactoryBase
     {
-        /// <summary>
-        /// Initializes an instance of the <see cref="MazdaFactory" /> class.
-        /// </summary>
-        public MazdaFactory()
-            : base()
-        {
-        }
-
         /// <summary>
         /// Manufacture the vehicle.
         /// </summary>
+        /// <param name="type">The class of vehicle.</param>
+        /// <returns>The vehicle.</returns>
         public override IVehicle Manufacture(string type)
         {
-            IVehicle result = null;
+            IVehicle result;
 
             switch (type)
             {
@@ -37,7 +33,7 @@ namespace Factory.Factories
                     break;
 
                 default:
-                    break;
+                    throw new ArgumentException("No such class of vehicle");
             }
 
             return result;

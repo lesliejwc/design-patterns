@@ -1,21 +1,14 @@
 using System;
 
-using Factory.Models;
+using Factory.Products;
 
 namespace Factory.Factories
 {
     /// <summary>
-    /// The vehicle factory class.
+    /// Factory method pattern implementation.
     /// </summary>
-    public class VehicleFactory
+    public class GenericFactory
     {
-        /// <summary>
-        /// Initializes an instance of the <see cref="VehicleFactory" /> class.
-        /// </summary>
-        public VehicleFactory()
-        {
-        }
-
         /// <summary>
         /// Manufacture a vehicle.
         /// </summary>
@@ -24,8 +17,7 @@ namespace Factory.Factories
         public IVehicle Manufacture(string manufacturer,
                                     string type)
         {
-            Factory factory = null;
-            IVehicle result = null;
+            FactoryBase factory;
 
             switch (manufacturer)
             {
@@ -45,14 +37,7 @@ namespace Factory.Factories
                     throw new ArgumentException("No such manufacturer.");
             }
 
-            result = factory.Manufacture(type);
-
-            if (result == null)
-            {
-                throw new ArgumentException("No such class of vehicle.");
-            }
-
-            return result;
+            return factory.Manufacture(type);
         }
     }
 }

@@ -20,8 +20,6 @@ behaviours to suit the context of the situation.
     - Strategies are coupled with an abstraction, and are not impacted by the 
       increasing/decreasing number of strategies, or the changing logic within 
       these strategies.
-
 - Uses composition instead of inheritance to decouple context objects from the 
   strategies.
-  
 - Strategies are interchangable dynamically at run-time.

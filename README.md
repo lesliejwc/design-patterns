@@ -18,7 +18,8 @@ that can be used in many different situations.
 Creational design patterns are about class instantiation. They solve issues 
 related to object creation and prevent unnecessary complexity to the design.
 
-[Factory](https://github.com/lesliejwc/design-patterns/tree/master/Factory)
+[Factory](https://github.com/lesliejwc/design-patterns/tree/master/Factory)  
+[Singleton](https://github.com/lesliejwc/design-patterns/tree/master/Singleton)
 
 #### Structural
 

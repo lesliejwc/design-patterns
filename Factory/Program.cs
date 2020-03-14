@@ -1,30 +1,36 @@
 ﻿using System;
 
 using Factory.Factories;
-using Factory.Models;
+using Factory.Products;
 
 namespace Factory
 {
-    /// <summary>
-    /// Abstract factory implementation.
-    /// </summary>
     public class Program
     {
         static void Main(string[] args)
         {
-            VehicleFactory factory = new VehicleFactory();
             IVehicle vehicle;
+            SimpleFactory sFactory = new SimpleFactory();
+            GenericFactory gFactory = new GenericFactory();
 
-            vehicle = factory.Manufacture("Toyota", "Car");
+
+            // Simple factory pattern demonstration.
+            Console.WriteLine("Simple factory:");
+
+            vehicle = sFactory.Manufacture("HondaCar");
             Console.WriteLine(vehicle.Name);
 
-            vehicle = factory.Manufacture("Toyota", "Truck");
+            vehicle = sFactory.Manufacture("ToyotaMotorcycle");
             Console.WriteLine(vehicle.Name);
 
-            vehicle = factory.Manufacture("Honda", "Motorcycle");
+
+            // factory method pattern demonstration.
+            Console.WriteLine("\nFactory method:");
+
+            vehicle = gFactory.Manufacture("Honda", "Car");
             Console.WriteLine(vehicle.Name);
 
-            vehicle = factory.Manufacture("Mazda", "Truck");
+            vehicle = gFactory.Manufacture("Toyota", "Motorcycle");
             Console.WriteLine(vehicle.Name);
         }
     }

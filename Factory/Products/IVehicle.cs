@@ -1,12 +1,12 @@
-namespace Factory.Models
+namespace Factory.Products
 {
     /// <summary>
-    /// The base for vehicles.
+    /// The base class for vehicles.
     /// </summary>
     public interface IVehicle
     {
         /// <summary>
-        /// The name/model of the vehicle.
+        /// The name of the vehicle.
         /// </summary>
         string Name { get; }
     }

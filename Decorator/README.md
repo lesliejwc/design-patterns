@@ -21,7 +21,6 @@ objects.
     - Extension by inheritance is less flexible, children classes have no 
       control over the behaviours defined in the parent class. Behaviours are 
       also determined statically at compile time.
-
 - Decorators have the same superclass type as the objects they decorate, so 
   decorated objects can be used in place of the original object.
     - If you depend on a concrete component type, you can't use the same 
