@@ -1,4 +1,4 @@
-namespace Factory.Models
+namespace Factory.Products
 {
     /// <summary>
     /// The motorcycle manufactured by Toyota.

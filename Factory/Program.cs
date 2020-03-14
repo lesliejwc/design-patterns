@@ -1,7 +1,7 @@
 ﻿using System;
 
 using Factory.Factories;
-using Factory.Models;
+using Factory.Products;
 
 namespace Factory
 {

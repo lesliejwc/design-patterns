@@ -1,4 +1,4 @@
-using Factory.Models;
+using Factory.Products;
 
 namespace Factory.Factories
 {

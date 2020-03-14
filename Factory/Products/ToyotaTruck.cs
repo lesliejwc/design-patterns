@@ -1,9 +1,9 @@
-namespace Factory.Models
+namespace Factory.Products
 {
     /// <summary>
-    /// The car manufactured by Toyota.
+    /// The truck manufactured by Toyota.
     /// </summary>
-    public class ToyotaCar : IVehicle
+    public class ToyotaTruck : IVehicle
     {
         /// <summary>
         /// The name of the vehicle.
@@ -11,11 +11,11 @@ namespace Factory.Models
         public string Name { get; private set; }
 
         /// <summary>
-        /// Initializes an instance of the <see cref="ToyotaCar" /> class.
+        /// Initializes an instance of the <see cref="ToyotaTruck" /> class.
         /// </summary>
-        public ToyotaCar()
+        public ToyotaTruck()
         {
-            Name = "Toyota Car";
+            Name = "Toyota Truck";
         }
     }
 }

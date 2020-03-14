@@ -1,4 +1,4 @@
-namespace Factory.Models
+namespace Factory.Products
 {
     /// <summary>
     /// The base class for vehicles.
